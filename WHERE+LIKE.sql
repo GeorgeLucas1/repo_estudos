@@ -1,0 +1,11 @@
+USE classicmodels;
+#AND TEM QUE SEREM IGUAIS 
+#OR PELO MENOS UM 
+#NOT  NEGAR UM VALOR 
+
+# VOLTANDO AOS ESTUDOS DE SQL COM FORÇA TOTAL :3
+
+
+
+
+SELECT customerNAME AS NOMES  FROM  customers WHERE customerName LIKE '%A%' OR '%B%' ; 
