@@ -3,40 +3,71 @@ apenas um cantinho pra colocar  meus script sql
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/9b17fc53-548a-4474-ba8d-d6e0afaa03f9" />
 
 
---JOINS
+# JOINS — Explicação Abstrata
+
+## Conceito
+
 Imagine duas listas:
 
-Lista A: pessoas convidadas para uma festa
-Lista B: pessoas que realmente apareceram
+- **Lista A**: pessoas convidadas para uma festa  
+- **Lista B**: pessoas que realmente apareceram  
 
-INNER
+Os tipos de JOIN representam formas diferentes de comparar essas duas listas.
 
-Só mostra quem estava nas duas listas.
-Convidado e compareceu.
+---
 
-LEFT
+## INNER
 
-Mostra todos os convidados.
-Se não compareceu, apenas indica que não foi.
+Mostra apenas quem está nas duas listas.
 
-RIGHT
+Convidado **e** compareceu.
 
-Mostra todos que apareceram.
+**Resumo:** interseção das listas.
+
+---
+
+## LEFT
+
+Mostra todos da **Lista A** (convidados).
+
+Se a pessoa não compareceu, apenas indica que não foi.
+
+**Resumo:** tudo da esquerda.
+
+---
+
+## RIGHT
+
+Mostra todos da **Lista B** (quem apareceu).
+
 Se alguém apareceu sem convite, ainda assim aparece.
 
-FULL
+**Resumo:** tudo da direita.
 
-Mostra todo mundo das duas listas.
-Convidados que não foram.
-Penetras que apareceram.
-E quem estava nas duas.
+---
 
-Resumo mental simples:
+## FULL
 
-INNER → quem bate dos dois lados
+Mostra todos das duas listas.
 
-LEFT → tudo da esquerda
+Inclui:
+- Convidados que não foram  
+- Pessoas que foram sem convite  
+- Quem estava nas duas  
 
-RIGHT → tudo da direita
+**Resumo:** tudo de tudo.
 
-FULL → tudo de tudo
+---
+
+## Resumo Mental Final
+
+- **INNER** → quem bate dos dois lados  
+- **LEFT** → tudo da esquerda  
+- **RIGHT** → tudo da direita  
+- **FULL** → tudo de ambos  
+
+
+
+
+
+
