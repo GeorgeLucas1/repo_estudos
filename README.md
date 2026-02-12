@@ -5,6 +5,10 @@ apenas um cantinho pra colocar  meus script sql
 
 # JOINS — Explicação Abstrata
 
+
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/afe7c566-0a42-48e9-9e28-348e4bec83f3" />
+
 ## Conceito
 
 Imagine duas listas:
@@ -68,6 +72,82 @@ Inclui:
 - **FULL** → tudo de ambos  
 
 
+
+
+# GROUP BY e HAVING — Explicação Simples
+
+## Conceito Geral
+
+Imagine uma lista de vendas:
+
+| Pessoa  | Valor |
+|----------|--------|
+| Ana      | 100    |
+| Ana      | 50     |
+| Bruno    | 30     |
+| Bruno    | 40     |
+| Carlos   | 10     |
+
+---
+
+# GROUP BY
+
+O `GROUP BY` serve para **agrupar dados semelhantes**.
+
+Se agrupamos por **Pessoa**, juntamos todas as linhas da mesma pessoa.
+
+Depois podemos aplicar um cálculo, como soma.
+
+### Resultado agrupado (somando valores):
+
+- Ana → 150  
+- Bruno → 70  
+- Carlos → 10  
+
+Resumo:
+
+`GROUP BY` cria grupos.
+
+---
+
+# HAVING
+
+O `HAVING` serve para **filtrar os grupos depois que eles já foram criados**.
+
+Exemplo:
+
+Mostrar apenas quem vendeu mais que 100.
+
+Após o agrupamento:
+
+- Ana → 150  
+- Bruno → 70  
+- Carlos → 10  
+
+Aplicando a regra:
+
+Resultado:
+
+- Ana → 150  
+
+Resumo:
+
+`HAVING` filtra grupos.
+
+---
+
+# Diferença Importante
+
+- `WHERE` → filtra linhas antes de agrupar  
+- `GROUP BY` → cria grupos  
+- `HAVING` → filtra grupos depois de agrupados  
+
+---
+
+# Resumo Final
+
+- GROUP BY → organiza em grupos  
+- HAVING → aplica condição nos grupos  
 
 
 
