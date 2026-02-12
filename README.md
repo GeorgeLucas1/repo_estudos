@@ -18,7 +18,7 @@ Os tipos de JOIN representam formas diferentes de comparar essas duas listas.
 
 ## INNER
 
-Só entra no INNER se o valor existir na A e na B ao mesmo tempo.
+Só entra no INNER se o valor existir na A e na B ao mesmo tempo por exemplo.
 Mostra apenas quem está nas duas listas.
 
 Convidado **e** compareceu.
